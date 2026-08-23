@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<NMSMPipelineDocument Version="1.5.2">
+	<JointModelPersonalizationTool name="default">
+		<input_directory>.</input_directory>
+		<input_model_file>SUBJ24_1_JMP_results\SUBJ24_1_NMSM_JMP_03_final.osim</input_model_file>
+		<output_model_file>SUBJ24_1_JMP_results\SUBJ24_1_NMSM_JMP_04_ankle_axis.osim</output_model_file>
+		<results_directory>SUBJ24_1_JMP_results</results_directory>
+		<allowable_error>0.005</allowable_error>
+		<JMPTaskList>
+			<JMPTask name="04_ankle_axis_only">
+				<is_enabled>true</is_enabled>
+				<index>1</index>
+				<marker_file_name>SUBJ24_1_walk_RCNL2025.trc</marker_file_name>
+				<time_range>0 2.88</time_range> <!-- PLACEHOLDER: revisar ciclo de marcha real -->
+				<JMPJointSet>
+					<!--
+					  Ankle axis personalization as a dedicated final step.
+					  
+					  WHY SEPARATE FROM STEP 2:
+					  When ankle orientation was optimized together with knee in Step 2,
+					  the ankle axis rotation competed with the larger-error knee markers,
+					  and the optimizer sacrificed ankle accuracy to reduce knee cost:
+					    L_Ankle_Lateral: 2.94 -> 5.44 mm in Step 2 alone (+85%).
+					  
+					  By running ankle AFTER all body scaling and marker repositioning
+					  is complete (Steps 1-3), the ankle axis tuning operates on a
+					  stable geometry with no competing parameters. The ankle markers
+					  (R/L_Ankle_Lateral on tibia) are no longer competing with
+					  large-error femur/knee markers.
+					  
+					  TIGHT BOUNDS: 0.15 rad (~8.6 deg) instead of 0.30 rad.
+					  At this final stage, the ankle axis only needs fine correction.
+					  Tight bounds prevent over-rotation that would displace ankle markers.
+					-->
+					<JMPJoint name="ankle_r">
+						<parent_frame_transformation>
+							<translation>false false false</translation>
+							<orientation>true true false</orientation>
+							<translation_bounds>0.0</translation_bounds>
+							<orientation_bounds>0.15</orientation_bounds>
+						</parent_frame_transformation>
+						<child_frame_transformation>
+							<translation>false false false</translation>
+							<orientation>false false false</orientation>
+							<translation_bounds>0.0</translation_bounds>
+							<orientation_bounds>0.15</orientation_bounds>
+						</child_frame_transformation>
+					</JMPJoint>
+					<JMPJoint name="ankle_l">
+						<parent_frame_transformation>
+							<translation>false false false</translation>
+							<orientation>true true false</orientation>
+							<translation_bounds>0.0</translation_bounds>
+							<orientation_bounds>0.15</orientation_bounds>
+						</parent_frame_transformation>
+						<child_frame_transformation>
+							<translation>false false false</translation>
+							<orientation>false false false</orientation>
+							<translation_bounds>0.0</translation_bounds>
+							<orientation_bounds>0.15</orientation_bounds>
+						</child_frame_transformation>
+					</JMPJoint>
+				</JMPJointSet>
+				<JMPBodySet>
+					<!--
+					  No body changes in this step.
+					  All scaling was completed in Steps 1-3.
+					  Pure joint axis optimization on an already-personalised geometry.
+					-->
+				</JMPBodySet>
+			</JMPTask>
+		</JMPTaskList>
+		<accuracy>1e-5</accuracy>
+		<diff_min_change>1e-4</diff_min_change>
+		<optimality_tolerance>1e-3</optimality_tolerance>
+		<function_tolerance>1e-6</function_tolerance>
+		<step_tolerance>1e-6</step_tolerance>
+		<!-- Small problem: 4 orientation parameters only. 400 evals is ample. -->
+		<max_function_evaluations>400</max_function_evaluations>
+	</JointModelPersonalizationTool>
+</NMSMPipelineDocument>

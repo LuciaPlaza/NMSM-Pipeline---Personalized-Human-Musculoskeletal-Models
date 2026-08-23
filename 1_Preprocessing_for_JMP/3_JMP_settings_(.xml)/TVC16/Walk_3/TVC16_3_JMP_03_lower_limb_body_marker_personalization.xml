@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<NMSMPipelineDocument Version="1.5.2">
+	<JointModelPersonalizationTool name="default">
+		<input_directory>.</input_directory>
+		<input_model_file>TVC16_3_JMP_results\TVC16_3_NMSM_JMP_02_knee_ankle.osim</input_model_file>
+		<output_model_file>TVC16_3_JMP_results\TVC16_3_NMSM_JMP_03_final.osim</output_model_file>
+		<results_directory>TVC16_3_JMP_results</results_directory>
+		<allowable_error>0.005</allowable_error>
+		<JMPTaskList>
+			<JMPTask name="03_lower_limb_and_foot_markers">
+				<is_enabled>true</is_enabled>
+				<index>1</index>
+				<marker_file_name>TVC_16_BWA5_walk_RCNL2025.trc</marker_file_name>
+				<time_range>0.50 5.50</time_range>
+				<JMPJointSet>
+					<!-- Hip tight refinement -->
+					<JMPJoint name="hip_r">
+						<parent_frame_transformation>
+							<translation>true true true</translation>
+							<orientation>false false false</orientation>
+							<translation_bounds>0.01</translation_bounds>
+							<orientation_bounds>0.15</orientation_bounds>
+						</parent_frame_transformation>
+						<child_frame_transformation>
+							<translation>false false false</translation>
+							<orientation>false false false</orientation>
+							<translation_bounds>0.01</translation_bounds>
+							<orientation_bounds>0.15</orientation_bounds>
+						</child_frame_transformation>
+					</JMPJoint>
+					<JMPJoint name="hip_l">
+						<parent_frame_transformation>
+							<translation>true true true</translation>
+							<orientation>false false false</orientation>
+							<translation_bounds>0.01</translation_bounds>
+							<orientation_bounds>0.15</orientation_bounds>
+						</parent_frame_transformation>
+						<child_frame_transformation>
+							<translation>false false false</translation>
+							<orientation>false false false</orientation>
+							<translation_bounds>0.01</translation_bounds>
+							<orientation_bounds>0.15</orientation_bounds>
+						</child_frame_transformation>
+					</JMPJoint>
+				</JMPJointSet>
+				<JMPBodySet>
+					<JMPBody name="femur_r">
+						<scale_body>true</scale_body>
+						<move_markers>true true true</move_markers>
+					</JMPBody>
+					<JMPBody name="femur_l">
+						<scale_body>true</scale_body>
+						<move_markers>true true true</move_markers>
+					</JMPBody>
+					<JMPBody name="tibia_r">
+						<scale_body>true</scale_body>
+						<move_markers>true false true</move_markers>
+					</JMPBody>
+					<JMPBody name="tibia_l">
+						<scale_body>true</scale_body>
+						<move_markers>true false true</move_markers>
+					</JMPBody>
+					<!--
+					  calcn: scale_body=false, move_markers XZ only.
+					  This repositions heel/toe markers laterally and
+					  anteroposteriorly WITHOUT scaling the foot segment
+					  (which caused catastrophic errors in v1).
+					  The Y axis (vertical/superior) is excluded to prevent
+					  the optimizer from floating the markers off the foot surface.
+					  
+					  This is included here (not in Step 4) because Step 3 tibia
+					  scaling shifts the ankle joint center, which indirectly moves
+					  calcn's reference frame. Optimising calcn markers in the same
+					  step as tibia scaling lets them compensate simultaneously.
+					-->
+					<JMPBody name="calcn_r">
+						<scale_body>false</scale_body>
+						<move_markers>true false true</move_markers>
+					</JMPBody>
+					<JMPBody name="calcn_l">
+						<scale_body>false</scale_body>
+						<move_markers>true false true</move_markers>
+					</JMPBody>
+				</JMPBodySet>
+			</JMPTask>
+		</JMPTaskList>
+		<accuracy>1e-5</accuracy>
+		<diff_min_change>1e-4</diff_min_change>
+		<optimality_tolerance>1e-3</optimality_tolerance>
+		<function_tolerance>1e-6</function_tolerance>
+		<step_tolerance>1e-6</step_tolerance>
+		<max_function_evaluations>2500</max_function_evaluations>
+	</JointModelPersonalizationTool>
+</NMSMPipelineDocument>

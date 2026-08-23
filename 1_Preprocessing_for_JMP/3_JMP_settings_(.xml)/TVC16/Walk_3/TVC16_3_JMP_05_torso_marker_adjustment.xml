@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<NMSMPipelineDocument Version="1.5.2">
+	<JointModelPersonalizationTool name="default">
+		<input_directory>.</input_directory>
+		<input_model_file>TVC16_3_JMP_results\TVC16_3_NMSM_JMP_04_ankle_axis.osim</input_model_file>
+		<output_model_file>TVC16_3_JMP_results\TVC16_3_NMSM_JMP_05_torso.osim</output_model_file>
+		<results_directory>TVC16_3_JMP_results</results_directory>
+		<allowable_error>0.005</allowable_error>
+		<JMPTaskList>
+			<JMPTask name="05_torso_marker_adjustment">
+				<is_enabled>true</is_enabled>
+				<index>1</index>
+				<marker_file_name>TVC_16_BWA5_walk_RCNL2025.trc</marker_file_name>
+				<time_range>0.50 5.50</time_range>
+				<JMPJointSet>
+					<!--
+					  back joint (spine, pelvis-torso): TRANSLATION ONLY on the
+					  parent frame (pelvis_offset), no orientation yet.
+					  This exactly mirrors how hip_r/l were treated in Step 1:
+					  coarse translation refinement first (0.02m bounds), with
+					  axis/orientation personalization deferred — the spine
+					  orientation never needed its own dedicated step for the
+					  leg's hip either, so we follow the same conservative
+					  pattern here rather than over-parameterising early.
+					-->
+					<JMPJoint name="back">
+						<parent_frame_transformation>
+							<translation>true true true</translation>
+							<orientation>false false false</orientation>
+							<translation_bounds>0.02</translation_bounds>
+							<orientation_bounds>0.30</orientation_bounds>
+						</parent_frame_transformation>
+						<child_frame_transformation>
+							<translation>false false false</translation>
+							<orientation>false false false</orientation>
+							<translation_bounds>0.02</translation_bounds>
+							<orientation_bounds>0.30</orientation_bounds>
+						</child_frame_transformation>
+					</JMPJoint>
+				</JMPJointSet>
+				<JMPBodySet>
+					<!--
+					  torso: scale_body=true, move_markers XYZ.
+					  Six markers sit on torso (R/L_Shoulder, C7, J_Notch,
+					  Thoracic, Sternum) spanning the full AP/vertical/lateral
+					  extent of the trunk (X: -0.10 to +0.17 m, Y: 0.18 to 0.42 m,
+					  Z: -0.17 to +0.17 m). This mirrors the pelvis treatment in
+					  Step 1, which also needed full 3-axis marker freedom to
+					  correct Sacral/Asis errors.
+					-->
+					<JMPBody name="torso">
+						<scale_body>true</scale_body>
+						<move_markers>true true true</move_markers>
+					</JMPBody>
+				</JMPBodySet>
+			</JMPTask>
+		</JMPTaskList>
+		<accuracy>1e-5</accuracy>
+		<diff_min_change>1e-4</diff_min_change>
+		<optimality_tolerance>1e-3</optimality_tolerance>
+		<function_tolerance>1e-6</function_tolerance>
+		<step_tolerance>1e-6</step_tolerance>
+		<max_function_evaluations>1500</max_function_evaluations>
+	</JointModelPersonalizationTool>
+</NMSMPipelineDocument>

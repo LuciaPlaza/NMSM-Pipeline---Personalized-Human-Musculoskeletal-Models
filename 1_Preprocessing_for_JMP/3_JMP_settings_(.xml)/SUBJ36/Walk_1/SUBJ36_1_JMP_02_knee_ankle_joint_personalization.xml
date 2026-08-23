@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<NMSMPipelineDocument Version="1.5.2">
+	<JointModelPersonalizationTool name="default">
+		<input_directory>.</input_directory>
+		<input_model_file>SUBJ36_1_JMP_results\SUBJ36_1_NMSM_JMP_01_pelvis_thigh.osim</input_model_file>
+		<output_model_file>SUBJ36_1_JMP_results\SUBJ36_1_NMSM_JMP_02_knee_ankle.osim</output_model_file>
+		<results_directory>SUBJ36_1_JMP_results</results_directory>
+		<allowable_error>0.005</allowable_error>
+		<JMPTaskList>
+			<JMPTask name="02_knee_axes_and_tibia">
+				<is_enabled>true</is_enabled>
+				<index>1</index>
+				<marker_file_name>SUBJ36_1_walk_RCNL2025.trc</marker_file_name>
+				<time_range>0 3.23</time_range> <!-- PLACEHOLDER: revisar ciclo de marcha real -->
+				<JMPJointSet>
+					<!--
+					  ANKLE REMOVED from this step vs v5.
+					  
+					  In v5, ankle axis rotation in Step 2 caused:
+					    L_Ankle_Lateral: 2.94 -> 5.44 mm (+85%)
+					    R_Ankle_Lateral: 3.60 -> 4.29 mm (+19%)
+					  
+					  Why: the ankle PinJoint parent frame (tibia_r_offset) is shared
+					  with R_Ankle_Lateral. Rotating it to minimise the global cost
+					  displaced the ankle marker relative to its TRC position.
+					  When competing with knee markers (larger cost), the optimizer
+					  sacrificed ankle accuracy.
+					  
+					  Fix: ankle gets its own dedicated Step 4 AFTER tibia scaling
+					  is complete, so no competition between scaling and axis tuning.
+					-->
+					<JMPJoint name="knee_r">
+						<parent_frame_transformation>
+							<translation>false false false</translation>
+							<orientation>true true false</orientation>
+							<translation_bounds>0.0</translation_bounds>
+							<orientation_bounds>0.30</orientation_bounds>
+						</parent_frame_transformation>
+						<child_frame_transformation>
+							<translation>false false false</translation>
+							<orientation>true true false</orientation>
+							<translation_bounds>0.0</translation_bounds>
+							<orientation_bounds>0.30</orientation_bounds>
+						</child_frame_transformation>
+					</JMPJoint>
+					<JMPJoint name="knee_l">
+						<parent_frame_transformation>
+							<translation>false false false</translation>
+							<orientation>true true false</orientation>
+							<translation_bounds>0.0</translation_bounds>
+							<orientation_bounds>0.30</orientation_bounds>
+						</parent_frame_transformation>
+						<child_frame_transformation>
+							<translation>false false false</translation>
+							<orientation>true true false</orientation>
+							<translation_bounds>0.0</translation_bounds>
+							<orientation_bounds>0.30</orientation_bounds>
+						</child_frame_transformation>
+					</JMPJoint>
+				</JMPJointSet>
+				<JMPBodySet>
+					<JMPBody name="tibia_r">
+						<scale_body>true</scale_body>
+						<move_markers>true false true</move_markers>
+					</JMPBody>
+					<JMPBody name="tibia_l">
+						<scale_body>true</scale_body>
+						<move_markers>true false true</move_markers>
+					</JMPBody>
+				</JMPBodySet>
+			</JMPTask>
+		</JMPTaskList>
+		<accuracy>1e-5</accuracy>
+		<diff_min_change>1e-4</diff_min_change>
+		<optimality_tolerance>1e-3</optimality_tolerance>
+		<function_tolerance>1e-6</function_tolerance>
+		<step_tolerance>1e-6</step_tolerance>
+		<max_function_evaluations>800</max_function_evaluations>
+	</JointModelPersonalizationTool>
+</NMSMPipelineDocument>

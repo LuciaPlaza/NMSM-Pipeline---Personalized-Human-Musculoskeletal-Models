@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<NMSMPipelineDocument Version="1.5.2">
+	<JointModelPersonalizationTool name="default">
+		<input_directory>.</input_directory>
+		<input_model_file>SUBJ11_scaled.osim</input_model_file>
+		<output_model_file>SUBJ11_3_JMP_results\SUBJ11_3_NMSM_JMP_01_pelvis_thigh.osim</output_model_file>
+		<results_directory>SUBJ11_3_JMP_results</results_directory>
+		<allowable_error>0.005</allowable_error>
+		<JMPTaskList>
+			<JMPTask name="01_pelvis_and_thigh_markers">
+				<is_enabled>true</is_enabled>
+				<index>1</index>
+				<marker_file_name>SUBJ11_3_walk_RCNL2025.trc</marker_file_name>
+				<time_range>0 3.88</time_range> <!-- PLACEHOLDER: revisar ciclo de marcha real -->
+				<JMPJointSet>
+					<JMPJoint name="hip_r">
+						<parent_frame_transformation>
+							<translation>true true true</translation>
+							<orientation>false false false</orientation>
+							<translation_bounds>0.02</translation_bounds>
+							<orientation_bounds>0.30</orientation_bounds>
+						</parent_frame_transformation>
+						<child_frame_transformation>
+							<translation>false false false</translation>
+							<orientation>false false false</orientation>
+							<translation_bounds>0.02</translation_bounds>
+							<orientation_bounds>0.30</orientation_bounds>
+						</child_frame_transformation>
+					</JMPJoint>
+					<JMPJoint name="hip_l">
+						<parent_frame_transformation>
+							<translation>true true true</translation>
+							<orientation>false false false</orientation>
+							<translation_bounds>0.02</translation_bounds>
+							<orientation_bounds>0.30</orientation_bounds>
+						</parent_frame_transformation>
+						<child_frame_transformation>
+							<translation>false false false</translation>
+							<orientation>false false false</orientation>
+							<translation_bounds>0.02</translation_bounds>
+							<orientation_bounds>0.30</orientation_bounds>
+						</child_frame_transformation>
+					</JMPJoint>
+				</JMPJointSet>
+				<JMPBodySet>
+					<JMPBody name="pelvis">
+						<scale_body>true</scale_body>
+						<move_markers>true true true</move_markers>
+					</JMPBody>
+					<!--
+					  femur_r: XYZ freedom (Y along segment).
+					  In v4, R_Knee_Lateral improved 14.67->6.16mm thanks to Y freedom.
+					  Keep this asymmetric treatment: right side benefits from Y,
+					  left side was harmed (L_Shank_Lateral 8.84->9.69).
+					-->
+					<JMPBody name="femur_r">
+						<scale_body>true</scale_body>
+						<move_markers>true true true</move_markers>
+					</JMPBody>
+					<!--
+					  femur_l: XYZ freedom, same as femur_r.
+					  Both sides are anatomically equivalent and must be treated
+					  identically. The previous asymmetry (femur_l=XZ, femur_r=XYZ)
+					  was based on analysis of v4 data that was corrupted by a bug
+					  in the STO writer (all 161 frames were collapsed to one line,
+					  so per-marker means were actually single-frame values at t=0.45s).
+					  With the STO bug now fixed, both sides use XYZ consistently.
+					-->
+					<JMPBody name="femur_l">
+						<scale_body>true</scale_body>
+						<move_markers>true true true</move_markers>
+					</JMPBody>
+				</JMPBodySet>
+			</JMPTask>
+		</JMPTaskList>
+		<accuracy>1e-5</accuracy>
+		<diff_min_change>1e-4</diff_min_change>
+		<optimality_tolerance>1e-3</optimality_tolerance>
+		<function_tolerance>1e-6</function_tolerance>
+		<step_tolerance>1e-6</step_tolerance>
+		<max_function_evaluations>1200</max_function_evaluations>
+	</JointModelPersonalizationTool>
+</NMSMPipelineDocument>
