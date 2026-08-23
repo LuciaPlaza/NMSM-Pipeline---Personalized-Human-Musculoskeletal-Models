@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<NMSMPipelineDocument Version="1.5.2">
+	<JointModelPersonalizationTool name="default">
+		<input_directory>.</input_directory>
+		<input_model_file>SUBJ82_2_JMP_results\SUBJ82_2_NMSM_JMP_06_shoulder_elbow.osim</input_model_file>
+		<output_model_file>SUBJ82_2_JMP_results\SUBJ82_2_NMSM_JMP_07_upper_limb_final.osim</output_model_file>
+		<results_directory>SUBJ82_2_JMP_results</results_directory>
+		<allowable_error>0.005</allowable_error>
+		<JMPTaskList>
+			<JMPTask name="07_upper_limb_and_forearm_markers">
+				<is_enabled>true</is_enabled>
+				<index>1</index>
+				<marker_file_name>SUBJ82_3_walk_RCNL2025.trc</marker_file_name>
+				<time_range>0 1.54</time_range>
+				<JMPJointSet>
+					<!--
+					  back: tight translation refinement (0.01m), mirrors the
+					  hip_r/l tightening pattern from Step 1 (0.02m) -> Step 3
+					  (0.01m). No hip-style "remove entirely" lesson applies
+					  here because this IS the first and only refinement pass
+					  for back beyond Step 5; we keep it, but at the tighter
+					  bound consistent with a second-pass correction rather
+					  than a fresh search.
+					-->
+					<JMPJoint name="back">
+						<parent_frame_transformation>
+							<translation>true true true</translation>
+							<orientation>false false false</orientation>
+							<translation_bounds>0.01</translation_bounds>
+							<orientation_bounds>0.15</orientation_bounds>
+						</parent_frame_transformation>
+						<child_frame_transformation>
+							<translation>false false false</translation>
+							<orientation>false false false</orientation>
+							<translation_bounds>0.01</translation_bounds>
+							<orientation_bounds>0.15</orientation_bounds>
+						</child_frame_transformation>
+					</JMPJoint>
+				</JMPJointSet>
+				<JMPBodySet>
+					<JMPBody name="torso">
+						<scale_body>true</scale_body>
+						<move_markers>true true true</move_markers>
+					</JMPBody>
+					<JMPBody name="humerus_r">
+						<scale_body>true</scale_body>
+						<move_markers>true true true</move_markers>
+					</JMPBody>
+					<JMPBody name="humerus_l">
+						<scale_body>true</scale_body>
+						<move_markers>true true true</move_markers>
+					</JMPBody>
+					<!--
+					  radius: scale_body=true, move_markers XZ only (no Y).
+					  Mirrors tibia exactly: R_Wrist/L_Wrist sit at the distal
+					  end of the radius (the equivalent of the shank/ankle
+					  markers on tibia), and the leg configuration found that
+					  XZ-only on the second limb segment was sufficient and
+					  more stable than adding Y there too (Y freedom on the
+					  PROXIMAL segment, here humerus, already does that work).
+					  There is no marker on 'hand', so no calcn-equivalent
+					  body is needed in this step.
+					-->
+					<JMPBody name="radius_r">
+						<scale_body>true</scale_body>
+						<move_markers>true false true</move_markers>
+					</JMPBody>
+					<JMPBody name="radius_l">
+						<scale_body>true</scale_body>
+						<move_markers>true false true</move_markers>
+					</JMPBody>
+				</JMPBodySet>
+			</JMPTask>
+		</JMPTaskList>
+		<accuracy>1e-5</accuracy>
+		<diff_min_change>1e-4</diff_min_change>
+		<optimality_tolerance>1e-3</optimality_tolerance>
+		<function_tolerance>1e-6</function_tolerance>
+		<step_tolerance>1e-6</step_tolerance>
+		<max_function_evaluations>1500</max_function_evaluations>
+	</JointModelPersonalizationTool>
+</NMSMPipelineDocument>

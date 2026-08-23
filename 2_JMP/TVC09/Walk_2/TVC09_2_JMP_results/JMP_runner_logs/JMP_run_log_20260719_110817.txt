@@ -1,0 +1,25 @@
+============================================================
+NMSM JMP RUNNER  v6  TVC09 Walk_2  (v5 full body - stroke config, 8 steps, redistributed budget)
+Started: 19-Jul-2026 11:08:18
+============================================================
+NMSM Pipeline Version: 1.5.3
+
+OpenSim Version: 4.5
+
+No GPOPS-II version in path
+
+NMSM Pipeline Project Successfully Opened
+NMSM: C:\Users\migue\Downloads\nmsm-core-1.5.3\nmsm-core-1.5.3\src\JointModelPersonalization\JointModelPersonalizationTool.m
+OpenSim API OK.
+Step 1 XML (6000 evals): C:\Users\migue\Downloads\TFG\2_JMP\TVC09\Walk_2\TVC09_2_JMP_results\JMP_runner_logs\AutoXML_with_updated_MaxFunctionEvaluations\TVC09_2_JMP_01_pelvis_thigh_marker_adjustment_maxEval6000.xml
+Step 2 XML (2000 evals): C:\Users\migue\Downloads\TFG\2_JMP\TVC09\Walk_2\TVC09_2_JMP_results\JMP_runner_logs\AutoXML_with_updated_MaxFunctionEvaluations\TVC09_2_JMP_02_knee_ankle_joint_personalization_maxEval2000.xml
+Step 3 XML (2500 evals): C:\Users\migue\Downloads\TFG\2_JMP\TVC09\Walk_2\TVC09_2_JMP_results\JMP_runner_logs\AutoXML_with_updated_MaxFunctionEvaluations\TVC09_2_JMP_03_lower_limb_body_marker_personalization_maxEval2500.xml
+Step 4 XML (100 evals): C:\Users\migue\Downloads\TFG\2_JMP\TVC09\Walk_2\TVC09_2_JMP_results\JMP_runner_logs\AutoXML_with_updated_MaxFunctionEvaluations\TVC09_2_JMP_04_ankle_axis_personalization_maxEval100.xml
+Step 5 XML (1500 evals): C:\Users\migue\Downloads\TFG\2_JMP\TVC09\Walk_2\TVC09_2_JMP_results\JMP_runner_logs\AutoXML_with_updated_MaxFunctionEvaluations\TVC09_2_JMP_05_torso_marker_adjustment_maxEval1500.xml
+Step 6 XML (1000 evals): C:\Users\migue\Downloads\TFG\2_JMP\TVC09\Walk_2\TVC09_2_JMP_results\JMP_runner_logs\AutoXML_with_updated_MaxFunctionEvaluations\TVC09_2_JMP_06_shoulder_elbow_joint_personalization_maxEval1000.xml
+Step 7 XML (1500 evals): C:\Users\migue\Downloads\TFG\2_JMP\TVC09\Walk_2\TVC09_2_JMP_results\JMP_runner_logs\AutoXML_with_updated_MaxFunctionEvaluations\TVC09_2_JMP_07_upper_limb_body_marker_personalization_maxEval1500.xml
+Step 8 XML (300 evals): C:\Users\migue\Downloads\TFG\2_JMP\TVC09\Walk_2\TVC09_2_JMP_results\JMP_runner_logs\AutoXML_with_updated_MaxFunctionEvaluations\TVC09_2_JMP_08_wrist_axis_personalization_maxEval300.xml
+
+=== STEP 1/8 ===
+  In:  C:\Users\migue\Downloads\TFG\2_JMP\TVC09\Walk_2\TVC09_scaled.osim
+  Out: C:\Users\migue\Downloads\TFG\2_JMP\TVC09\Walk_2\TVC09_2_JMP_results\TVC09_2_NMSM_JMP_01_pelvis_thigh.osim

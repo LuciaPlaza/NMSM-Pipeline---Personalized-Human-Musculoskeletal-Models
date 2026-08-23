@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<NMSMPipelineDocument Version="1.5.2">
+	<JointModelPersonalizationTool name="default">
+		<input_directory>.</input_directory>
+		<input_model_file>SUBJ36_1_JMP_results\SUBJ36_1_NMSM_JMP_07_upper_limb_final.osim</input_model_file>
+		<output_model_file>SUBJ36_1_JMP_results\SUBJ36_1_NMSM_JMP_08_wrist_axis_FINAL.osim</output_model_file>
+		<results_directory>SUBJ36_1_JMP_results</results_directory>
+		<allowable_error>0.005</allowable_error>
+		<JMPTaskList>
+			<JMPTask name="08_elbow_forearm_wrist_axes_only">
+				<is_enabled>true</is_enabled>
+				<index>1</index>
+				<marker_file_name>SUBJ36_1_walk_RCNL2025.trc</marker_file_name>
+				<time_range>0 3.23</time_range>
+				<JMPJointSet>
+					<!--
+					  Elbow/forearm/wrist axis personalization as a dedicated
+					  final step, exactly mirroring how ankle_r/l were treated
+					  in Step 4: run AFTER all body scaling and marker
+					  repositioning is complete (Steps 5-7), with zero
+					  competing body parameters and bounds tightened to
+					  0.15 rad (same value validated for ankle in Step 4),
+					  since at this stage only fine correction is expected,
+					  not a fresh search.
+
+					  Note: there is no marker distal to the wrist (no hand
+					  marker in this dataset), so radius_hand orientation has
+					  weaker corrective leverage than elbow/radioulnar; it
+					  is included as a safety net (as Step 4 was for SUBJ1,
+					  where it converged with zero gradient) and may simply
+					  converge immediately for this subject too.
+					-->
+					<JMPJoint name="elbow_r">
+						<parent_frame_transformation>
+							<translation>false false false</translation>
+							<orientation>true true false</orientation>
+							<translation_bounds>0.0</translation_bounds>
+							<orientation_bounds>0.25</orientation_bounds>
+						</parent_frame_transformation>
+						<child_frame_transformation>
+							<translation>false false false</translation>
+							<orientation>false false false</orientation>
+							<translation_bounds>0.0</translation_bounds>
+							<orientation_bounds>0.25</orientation_bounds>
+						</child_frame_transformation>
+					</JMPJoint>
+					<JMPJoint name="elbow_l">
+						<parent_frame_transformation>
+							<translation>false false false</translation>
+							<orientation>true true false</orientation>
+							<translation_bounds>0.0</translation_bounds>
+							<orientation_bounds>0.25</orientation_bounds>
+						</parent_frame_transformation>
+						<child_frame_transformation>
+							<translation>false false false</translation>
+							<orientation>false false false</orientation>
+							<translation_bounds>0.0</translation_bounds>
+							<orientation_bounds>0.25</orientation_bounds>
+						</child_frame_transformation>
+					</JMPJoint>
+					<JMPJoint name="radioulnar_r">
+						<parent_frame_transformation>
+							<translation>false false false</translation>
+							<orientation>true true false</orientation>
+							<translation_bounds>0.0</translation_bounds>
+							<orientation_bounds>0.25</orientation_bounds>
+						</parent_frame_transformation>
+						<child_frame_transformation>
+							<translation>false false false</translation>
+							<orientation>false false false</orientation>
+							<translation_bounds>0.0</translation_bounds>
+							<orientation_bounds>0.25</orientation_bounds>
+						</child_frame_transformation>
+					</JMPJoint>
+					<JMPJoint name="radioulnar_l">
+						<parent_frame_transformation>
+							<translation>false false false</translation>
+							<orientation>true true false</orientation>
+							<translation_bounds>0.0</translation_bounds>
+							<orientation_bounds>0.25</orientation_bounds>
+						</parent_frame_transformation>
+						<child_frame_transformation>
+							<translation>false false false</translation>
+							<orientation>false false false</orientation>
+							<translation_bounds>0.0</translation_bounds>
+							<orientation_bounds>0.25</orientation_bounds>
+						</child_frame_transformation>
+					</JMPJoint>
+					<JMPJoint name="radius_hand_r">
+						<parent_frame_transformation>
+							<translation>false false false</translation>
+							<orientation>true true false</orientation>
+							<translation_bounds>0.0</translation_bounds>
+							<orientation_bounds>0.25</orientation_bounds>
+						</parent_frame_transformation>
+						<child_frame_transformation>
+							<translation>false false false</translation>
+							<orientation>false false false</orientation>
+							<translation_bounds>0.0</translation_bounds>
+							<orientation_bounds>0.25</orientation_bounds>
+						</child_frame_transformation>
+					</JMPJoint>
+					<JMPJoint name="radius_hand_l">
+						<parent_frame_transformation>
+							<translation>false false false</translation>
+							<orientation>true true false</orientation>
+							<translation_bounds>0.0</translation_bounds>
+							<orientation_bounds>0.25</orientation_bounds>
+						</parent_frame_transformation>
+						<child_frame_transformation>
+							<translation>false false false</translation>
+							<orientation>false false false</orientation>
+							<translation_bounds>0.0</translation_bounds>
+							<orientation_bounds>0.25</orientation_bounds>
+						</child_frame_transformation>
+					</JMPJoint>
+				</JMPJointSet>
+				<JMPBodySet>
+					<!-- No body changes: pure joint axis fine-tuning on already-personalised geometry. -->
+				</JMPBodySet>
+			</JMPTask>
+		</JMPTaskList>
+		<accuracy>1e-5</accuracy>
+		<diff_min_change>1e-4</diff_min_change>
+		<optimality_tolerance>1e-3</optimality_tolerance>
+		<function_tolerance>1e-6</function_tolerance>
+		<step_tolerance>1e-6</step_tolerance>
+		<max_function_evaluations>300</max_function_evaluations>
+	</JointModelPersonalizationTool>
+</NMSMPipelineDocument>

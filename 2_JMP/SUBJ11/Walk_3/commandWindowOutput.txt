@@ -1,0 +1,2225 @@
+
+                                            Norm of      First-order 
+ Iteration  Func-count      Resnorm            step       optimality
+     0         77           64.2824                             85.2
+     1        154             47.62        0.104448             63.2      
+     2        231           38.7476       0.0896541             49.1      
+     3        308             34.25        0.059014             39.9      
+     4        385           30.9135       0.0629149             37.7      
+     5        462           28.9506        0.034129             35.5      
+     6        539            27.593       0.0284803             31.5      
+     7        616            26.642         0.02342             29.9      
+     8        693           25.6655       0.0286176             30.2      
+     9        770            24.895       0.0208204             26.1      
+    10        847           24.4043       0.0159268             24.2      
+    11        924           23.9789       0.0178019             25.4      
+    12       1001           23.6414       0.0157817             23.5      
+    13       1078           23.2699       0.0167922             23.5      
+    14       1155           22.9427       0.0195179             20.4      
+    15       1232           22.7226       0.0192188             21.7      
+    16       1309           22.5188         0.01609             20.9      
+    17       1386           22.3582       0.0164283             18.1      
+    18       1463           22.1776      0.00227244             21.1      
+    19       1540           21.9721      0.00931656               18      
+    20       1617           21.8366      0.00333606             18.2      
+    21       1694           21.7152         0.00346         9.86e+04      
+    22       1771           21.5838       0.0032933             18.9      
+    23       1848            21.529     0.000823324             16.7      
+    24       1925           21.4279      0.00164665             17.7      
+    25       2002           21.3205       0.0032933             15.1      
+    26       2079           21.2419      0.00432487             16.6      
+    27       2156           21.1508      0.00152272             16.3      
+    28       2233           21.0659      0.00146004             16.7      
+    29       2310           20.9862      0.00304871             13.7      
+    30       2387           20.9161      0.00196481             15.4      
+    31       2464           20.8055      0.00225981             13.3      
+    32       2541           20.7033       0.0019689             14.6      
+    33       2618           20.6323      0.00179032             12.8      
+    34       2695           20.5787      0.00150079             13.3      
+
+                                            Norm of      First-order 
+ Iteration  Func-count      Resnorm            step       optimality
+     0         77           64.2824                             85.2
+     1        154             47.62        0.104448             63.2      
+     2        231           38.7476       0.0896541             49.1      
+<a href="matlab: opentoline('C:\Users\lucia\Downloads\nmsm-core-1.5.3\nmsm-core-1.5.3\src\JointModelPersonalization\KinematicCalibration\computeInverseKinematicsSquaredError.m',44,1)">44  </a>        error = [error calculateFrameSquaredError(ikSolver)];
+{Operation terminated by user during <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('computeInverseKinematicsSquaredError', 'C:\Users\lucia\Downloads\nmsm-core-1.5.3\nmsm-core-1.5.3\src\JointModelPersonalization\KinematicCalibration\computeInverseKinematicsSquaredError.m', 43)" style="font-weight:bold">computeInverseKinematicsSquaredError</a> (<a href="matlab: opentoline('C:\Users\lucia\Downloads\nmsm-core-1.5.3\nmsm-core-1.5.3\src\JointModelPersonalization\KinematicCalibration\computeInverseKinematicsSquaredError.m',43,0)">line 43</a>)
+
+
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('computeInnerOptimizationHeuristic', 'C:\Users\lucia\Downloads\nmsm-core-1.5.3\nmsm-core-1.5.3\src\JointModelPersonalization\KinematicCalibration\computeInnerOptimizationHeuristic.m', 37)" style="font-weight:bold">computeInnerOptimizationHeuristic</a> (<a href="matlab: opentoline('C:\Users\lucia\Downloads\nmsm-core-1.5.3\nmsm-core-1.5.3\src\JointModelPersonalization\KinematicCalibration\computeInnerOptimizationHeuristic.m',37,0)">line 37</a>)
+error = computeInverseKinematicsSquaredError(model, trialIKSolver, ...
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('computeInnerOptimization', 'C:\Users\lucia\Downloads\nmsm-core-1.5.3\nmsm-core-1.5.3\src\JointModelPersonalization\KinematicCalibration\computeInnerOptimization.m', 43)" style="font-weight:bold">computeInnerOptimization</a> (<a href="matlab: opentoline('C:\Users\lucia\Downloads\nmsm-core-1.5.3\nmsm-core-1.5.3\src\JointModelPersonalization\KinematicCalibration\computeInnerOptimization.m',43,0)">line 43</a>)
+error = computeInnerOptimizationHeuristic(modelCopy, markersReference, ...
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('computeKinematicCalibration>@(values)computeInnerOptimization(values,functions,model,markerFileName,params)', 'C:\Users\lucia\Downloads\nmsm-core-1.5.3\nmsm-core-1.5.3\src\JointModelPersonalization\KinematicCalibration\computeKinematicCalibration.m', 41)" style="font-weight:bold">computeKinematicCalibration>@(values)computeInnerOptimization(values,functions,model,markerFileName,params)</a> (<a href="matlab: opentoline('C:\Users\lucia\Downloads\nmsm-core-1.5.3\nmsm-core-1.5.3\src\JointModelPersonalization\KinematicCalibration\computeKinematicCalibration.m',41,0)">line 41</a>)
+    (@(values) computeInnerOptimization(values, functions, model, ...
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In finDiffEvalAndChkErr
+
+In finitedifferences
+
+In computeFinDiffGradAndJac
+
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('sfdnls', 'C:\Program Files\MATLAB\R2025b\toolbox\shared\optimlib\sfdnls.m', 51)" style="font-weight:bold">sfdnls</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2025b\toolbox\shared\optimlib\sfdnls.m',51,0)">line 51</a>)
+        computeFinDiffGradAndJac(x,funfcn{3},[],valx, ...
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('snls', 'C:\Program Files\MATLAB\R2025b\toolbox\shared\optimlib\snls.m', 345)" style="font-weight:bold">snls</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2025b\toolbox\shared\optimlib\snls.m',345,0)">line 345</a>)
+         [newA, findiffevals] = sfdnls(xcurr,newfvec,Jstr,group,alpha, ...
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('lsqncommon', 'C:\Program Files\MATLAB\R2025b\toolbox\shared\optimlib\lsqncommon.m', 178)" style="font-weight:bold">lsqncommon</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2025b\toolbox\shared\optimlib\lsqncommon.m',178,0)">line 178</a>)
+            snls(funfcn,xC,lb,ub,flags.verbosity,options,defaultopt,F,Jac,caller, ...
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('lsqnonlin', 'C:\Program Files\MATLAB\R2025b\toolbox\shared\optimlib\lsqnonlin.m', 264)" style="font-weight:bold">lsqnonlin</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2025b\toolbox\shared\optimlib\lsqnonlin.m',264,0)">line 264</a>)
+    lsqncommon(funfcn,xCurrent,lb,ub,options,defaultopt,caller,...
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('computeKinematicCalibration', 'C:\Users\lucia\Downloads\nmsm-core-1.5.3\nmsm-core-1.5.3\src\JointModelPersonalization\KinematicCalibration\computeKinematicCalibration.m', 40)" style="font-weight:bold">computeKinematicCalibration</a> (<a href="matlab: opentoline('C:\Users\lucia\Downloads\nmsm-core-1.5.3\nmsm-core-1.5.3\src\JointModelPersonalization\KinematicCalibration\computeKinematicCalibration.m',40,0)">line 40</a>)
+optimizedValues = lsqnonlin ...
+                  ^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('JointModelPersonalization', 'C:\Users\lucia\Downloads\nmsm-core-1.5.3\nmsm-core-1.5.3\src\JointModelPersonalization\JointModelPersonalization.m', 44)" style="font-weight:bold">JointModelPersonalization</a> (<a href="matlab: opentoline('C:\Users\lucia\Downloads\nmsm-core-1.5.3\nmsm-core-1.5.3\src\JointModelPersonalization\JointModelPersonalization.m',44,0)">line 44</a>)
+    optimizedValues = computeKinematicCalibration(outputModelFileName, ...
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('JointModelPersonalizationTool', 'C:\Users\lucia\Downloads\nmsm-core-1.5.3\nmsm-core-1.5.3\src\JointModelPersonalization\JointModelPersonalizationTool.m', 45)" style="font-weight:bold">JointModelPersonalizationTool</a> (<a href="matlab: opentoline('C:\Users\lucia\Downloads\nmsm-core-1.5.3\nmsm-core-1.5.3\src\JointModelPersonalization\JointModelPersonalizationTool.m',45,0)">line 45</a>)
+newModel = JointModelPersonalization(inputs, params);
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('SUBJ11_3_Step1_JMP', 'C:\Users\lucia\Desktop\TFG\2_JMP\SUBJ11\Walk_3\SUBJ11_3_Step1_JMP.m', 125)" style="font-weight:bold">SUBJ11_3_Step1_JMP</a> (<a href="matlab: opentoline('C:\Users\lucia\Desktop\TFG\2_JMP\SUBJ11\Walk_3\SUBJ11_3_Step1_JMP.m',125,0)">line 125</a>)
+        JointModelPersonalizationTool(settingsFiles{i});
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+computeInverseKinematicsSquaredError
+
+ans =
+
+  Columns 1 through 18
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 19 through 36
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 37 through 54
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 55 through 72
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 73 through 90
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 91 through 108
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 109 through 126
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 127 through 144
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 145 through 162
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 163 through 180
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 181 through 198
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 199 through 216
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 217 through 234
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 235 through 252
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 253 through 270
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 271 through 288
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 289 through 306
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 307 through 324
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 325 through 342
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 343 through 360
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 361 through 378
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 379 through 396
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 397 through 414
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 415 through 432
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 433 through 450
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 451 through 468
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 469 through 486
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 487 through 504
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 505 through 522
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 523 through 540
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 541 through 558
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 559 through 576
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 577 through 594
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 595 through 612
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 613 through 630
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 631 through 648
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 649 through 666
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 667 through 684
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 685 through 702
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 703 through 720
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 721 through 738
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 739 through 756
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 757 through 774
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 775 through 792
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 793 through 810
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 811 through 828
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 829 through 846
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 847 through 864
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 865 through 882
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 883 through 900
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 901 through 918
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 919 through 936
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 937 through 954
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 955 through 972
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 973 through 990
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 991 through 1008
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1009 through 1026
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1027 through 1044
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1045 through 1062
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1063 through 1080
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1081 through 1098
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1099 through 1116
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1117 through 1134
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1135 through 1152
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1153 through 1170
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1171 through 1188
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1189 through 1206
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1207 through 1224
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1225 through 1242
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1243 through 1260
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1261 through 1278
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1279 through 1296
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1297 through 1314
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1315 through 1332
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1333 through 1350
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1351 through 1368
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1369 through 1386
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1387 through 1404
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1405 through 1422
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1423 through 1440
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1441 through 1458
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1459 through 1476
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1477 through 1494
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1495 through 1512
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1513 through 1530
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1531 through 1548
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1549 through 1566
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1567 through 1584
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1585 through 1602
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1603 through 1620
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1621 through 1638
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1639 through 1656
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1657 through 1674
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1675 through 1692
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1693 through 1710
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1711 through 1728
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1729 through 1746
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1747 through 1764
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1765 through 1782
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1783 through 1800
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1801 through 1818
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1819 through 1836
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1837 through 1854
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1855 through 1872
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1873 through 1890
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1891 through 1908
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1909 through 1926
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1927 through 1944
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1945 through 1962
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1963 through 1980
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1981 through 1998
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 1999 through 2016
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2017 through 2034
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2035 through 2052
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2053 through 2070
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2071 through 2088
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2089 through 2106
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2107 through 2124
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2125 through 2142
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2143 through 2160
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2161 through 2178
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2179 through 2196
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2197 through 2214
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2215 through 2232
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2233 through 2250
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2251 through 2268
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2269 through 2286
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2287 through 2304
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2305 through 2322
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2323 through 2340
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2341 through 2358
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2359 through 2376
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2377 through 2394
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2395 through 2412
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2413 through 2430
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2431 through 2448
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2449 through 2466
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2467 through 2484
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2485 through 2502
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2503 through 2520
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2521 through 2538
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2539 through 2556
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2557 through 2574
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2575 through 2592
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2593 through 2610
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2611 through 2628
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2629 through 2646
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2647 through 2664
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2665 through 2682
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2683 through 2700
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2701 through 2718
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2719 through 2736
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2737 through 2754
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2755 through 2772
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2773 through 2790
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2791 through 2808
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2809 through 2826
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2827 through 2844
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2845 through 2862
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2863 through 2880
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2881 through 2898
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2899 through 2916
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2917 through 2934
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2935 through 2952
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2953 through 2970
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2971 through 2988
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 2989 through 3006
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3007 through 3024
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3025 through 3042
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3043 through 3060
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3061 through 3078
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3079 through 3096
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3097 through 3114
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3115 through 3132
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3133 through 3150
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3151 through 3168
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3169 through 3186
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3187 through 3204
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3205 through 3222
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3223 through 3240
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3241 through 3258
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3259 through 3276
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3277 through 3294
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3295 through 3312
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3313 through 3330
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3331 through 3348
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3349 through 3366
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3367 through 3384
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3385 through 3402
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3403 through 3420
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3421 through 3438
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3439 through 3456
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3457 through 3474
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3475 through 3492
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3493 through 3510
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3511 through 3528
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3529 through 3546
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3547 through 3564
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3565 through 3582
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3583 through 3600
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3601 through 3618
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3619 through 3636
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3637 through 3654
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3655 through 3672
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3673 through 3690
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3691 through 3708
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3709 through 3726
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3727 through 3744
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3745 through 3762
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3763 through 3780
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3781 through 3798
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3799 through 3816
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3817 through 3834
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3835 through 3852
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3853 through 3870
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3871 through 3888
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3889 through 3906
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3907 through 3924
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3925 through 3942
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3943 through 3960
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3961 through 3978
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3979 through 3996
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 3997 through 4014
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4015 through 4032
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4033 through 4050
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4051 through 4068
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4069 through 4086
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4087 through 4104
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4105 through 4122
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4123 through 4140
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4141 through 4158
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4159 through 4176
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4177 through 4194
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4195 through 4212
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4213 through 4230
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4231 through 4248
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4249 through 4266
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4267 through 4284
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4285 through 4302
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4303 through 4320
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4321 through 4338
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4339 through 4356
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4357 through 4374
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4375 through 4392
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4393 through 4410
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4411 through 4428
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4429 through 4446
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4447 through 4464
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4465 through 4482
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4483 through 4500
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4501 through 4518
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4519 through 4536
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4537 through 4554
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4555 through 4572
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4573 through 4590
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4591 through 4608
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4609 through 4626
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4627 through 4644
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4645 through 4662
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4663 through 4680
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4681 through 4698
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4699 through 4716
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4717 through 4734
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4735 through 4752
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4753 through 4770
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4771 through 4788
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4789 through 4806
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4807 through 4824
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4825 through 4842
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4843 through 4860
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4861 through 4878
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4879 through 4896
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4897 through 4914
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4915 through 4932
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4933 through 4950
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4951 through 4968
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4969 through 4986
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 4987 through 5004
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5005 through 5022
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5023 through 5040
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5041 through 5058
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5059 through 5076
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5077 through 5094
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5095 through 5112
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5113 through 5130
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5131 through 5148
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5149 through 5166
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5167 through 5184
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5185 through 5202
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5203 through 5220
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5221 through 5238
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5239 through 5256
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5257 through 5274
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5275 through 5292
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5293 through 5310
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5311 through 5328
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5329 through 5346
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5347 through 5364
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5365 through 5382
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5383 through 5400
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5401 through 5418
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5419 through 5436
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5437 through 5454
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5455 through 5472
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5473 through 5490
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5491 through 5508
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5509 through 5526
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5527 through 5544
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5545 through 5562
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5563 through 5580
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5581 through 5598
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5599 through 5616
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5617 through 5634
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5635 through 5652
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5653 through 5670
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5671 through 5688
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5689 through 5706
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5707 through 5724
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5725 through 5742
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5743 through 5760
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5761 through 5778
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5779 through 5796
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5797 through 5814
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5815 through 5832
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5833 through 5850
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5851 through 5868
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5869 through 5886
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5887 through 5904
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5905 through 5922
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5923 through 5940
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5941 through 5958
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5959 through 5976
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5977 through 5994
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 5995 through 6012
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6013 through 6030
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6031 through 6048
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6049 through 6066
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6067 through 6084
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6085 through 6102
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6103 through 6120
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6121 through 6138
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6139 through 6156
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6157 through 6174
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6175 through 6192
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6193 through 6210
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6211 through 6228
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6229 through 6246
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6247 through 6264
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6265 through 6282
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6283 through 6300
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6301 through 6318
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6319 through 6336
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6337 through 6354
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6355 through 6372
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6373 through 6390
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6391 through 6408
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6409 through 6426
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6427 through 6444
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6445 through 6462
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6463 through 6480
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6481 through 6498
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6499 through 6516
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6517 through 6534
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6535 through 6552
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6553 through 6570
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6571 through 6588
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6589 through 6606
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6607 through 6624
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6625 through 6642
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6643 through 6660
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6661 through 6678
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6679 through 6696
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6697 through 6714
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6715 through 6732
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6733 through 6750
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6751 through 6768
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6769 through 6786
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6787 through 6804
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6805 through 6822
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6823 through 6840
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6841 through 6858
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6859 through 6876
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6877 through 6894
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6895 through 6912
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6913 through 6930
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6931 through 6948
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6949 through 6966
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6967 through 6984
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 6985 through 7002
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7003 through 7020
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7021 through 7038
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7039 through 7056
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7057 through 7074
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7075 through 7092
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7093 through 7110
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7111 through 7128
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7129 through 7146
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7147 through 7164
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7165 through 7182
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7183 through 7200
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7201 through 7218
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7219 through 7236
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7237 through 7254
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7255 through 7272
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7273 through 7290
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7291 through 7308
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7309 through 7326
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7327 through 7344
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7345 through 7362
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7363 through 7380
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7381 through 7398
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7399 through 7416
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7417 through 7434
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7435 through 7452
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7453 through 7470
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7471 through 7488
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7489 through 7506
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7507 through 7524
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7525 through 7542
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7543 through 7560
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7561 through 7578
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7579 through 7596
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7597 through 7614
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7615 through 7632
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7633 through 7650
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7651 through 7668
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7669 through 7686
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7687 through 7704
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7705 through 7722
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7723 through 7740
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7741 through 7758
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7759 through 7776
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7777 through 7794
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7795 through 7812
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7813 through 7830
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7831 through 7848
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7849 through 7866
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7867 through 7884
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7885 through 7902
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7903 through 7920
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7921 through 7938
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7939 through 7956
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7957 through 7974
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7975 through 7992
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 7993 through 8010
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 8011 through 8028
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 8029 through 8046
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 8047 through 8064
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 8065 through 8082
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 8083 through 8100
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 8101 through 8118
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 8119 through 8136
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 8137 through 8154
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+  Columns 8155 through 8169
+
+   100   100   100   100   100   100   100   100   100   100   100   100   100   100   100
+
+SUBJ11_3_Step1_JMP
+
+                                            Norm of      First-order 
+ Iteration  Func-count      Resnorm            step       optimality
+     0         77           64.2824                             85.2
+     1        154             47.62        0.104448             63.2      
+     2        231           38.7476       0.0896541             49.1      
+     3        308             34.25        0.059014             39.9      
+     4        385           30.9135       0.0629149             37.7      
+     5        462           28.9506        0.034129             35.5      
+     6        539            27.593       0.0284803             31.5      
+     7        616            26.642         0.02342             29.9      
+     8        693           25.6655       0.0286176             30.2      
+     9        770            24.895       0.0208204             26.1      
+    10        847           24.4043       0.0159268             24.2      
+    11        924           23.9789       0.0178019             25.4      
+    12       1001           23.6414       0.0157817             23.5      
+    13       1078           23.2699       0.0167922             23.5      
+    14       1155           22.9427       0.0195179             20.4      
+    15       1232           22.7226       0.0192188             21.7      
+    16       1309           22.5188         0.01609             20.9      
+    17       1386           22.3582       0.0164283             18.1      
+    18       1463           22.1776      0.00227244             21.1      
+    19       1540           21.9721      0.00931656               18      
+    20       1617           21.8366      0.00333606             18.2      
+    21       1694           21.7152         0.00346         9.86e+04      
+    22       1771           21.5838       0.0032933             18.9      
+    23       1848            21.529     0.000823324             16.7      
+    24       1925           21.4279      0.00164665             17.7      
+    25       2002           21.3205       0.0032933             15.1      
+    26       2079           21.2419      0.00432487             16.6      
+    27       2156           21.1508      0.00152272             16.3      
+    28       2233           21.0659      0.00146004             16.7      
+    29       2310           20.9862      0.00304871             13.7      
+    30       2387           20.9161      0.00196481             15.4      
+    31       2464           20.8055      0.00225981             13.3      
+    32       2541           20.7033       0.0019689             14.6      
+    33       2618           20.6323      0.00179032             12.8      
+    34       2695           20.5787      0.00150079             13.3      
+    35       2772           20.5147      0.00135645             11.4      
+    36       2849           20.4534      0.00135802             12.3      
+    37       2926           20.3915      0.00230454             10.8      
+    38       3003            20.341      0.00114171             11.3      
+    39       3080           20.2818      0.00136627             11.7      
+    40       3157           20.2414       0.0011059             11.4      
+    41       3234           20.1951      0.00230258             12.2      
+    42       3311           20.1452       0.0012449             11.2      
+    43       3388           20.1042      0.00106471             10.8      
+    44       3465           20.0684     0.000915997             10.4      
+    45       3542           20.0245      0.00114922             10.6      
+    46       3619           19.9938      0.00353545             10.5      
+    47       3696           19.9685      0.00230118               10      
+    48       3773           19.9336     0.000970834             9.26      
+    49       3850           19.8997     0.000941113             10.4      
+    50       3927           19.8773      0.00187278             9.96      
+    51       4004           19.8428     0.000987815             8.43      
+    52       4081           19.8107     0.000945767             9.64      
+    53       4158            19.782     0.000890538             8.96      
+    54       4235           19.7438      0.00157649             9.38      
+    55       4312           19.7143     0.000938919             8.94      
+    56       4389            19.686     0.000896721              8.7      
+    57       4466           19.6647     0.000701348             8.31      
+    58       4543           19.6358     0.000949808             8.17      
+    59       4620              19.6      0.00225283             7.52      
+    60       4697           19.5816     0.000695154                7      
+    61       4774           19.5651      0.00318849             7.94      
+    62       4851           19.5391      0.00281001             9.04      
+    63       4928           19.5189      0.00218962             8.05      
+    64       5005           19.4994      0.00382261             7.28      
+    65       5082           19.4765     0.000830496             8.18      
+    66       5159           19.4612      0.00472938             6.53      
+    67       5236           19.4429     0.000700256             8.75      
+    68       5313           19.4233      0.00170627             8.02      
+    69       5390           19.4027     0.000794469         1.07e+04      
+    70       5467            19.402     1.94551e-05             7.19      
+    71       5544            19.402     4.86376e-06             7.19      
+    72       5621            19.402     1.21594e-06             7.19      
+    73       5698            19.402     3.03985e-07             7.19      
+
+<a href = "matlab: helpview('optim','local_min_possible_lsq','CSHelpWindow');">Local minimum possible</a>.
+lsqnonlin stopped because the <a href = "matlab: helpview('optim','norm_current_step','CSHelpWindow');">size of the current step</a> is less than
+the value of the <a href = "matlab: helpview('optim','step_size_tol','CSHelpWindow');">step size tolerance</a>.
+
+<<a href = "matlab: createExitMsg({'optimlib:snls:Exit2basic','lsqnonlin'},{'optimlib:snls:Exit2detailed','3.039852e-07','1.000000e-06'},true,true);;">stopping criteria details</a>>
+Joint Model Personalization Runtime: 24.612084 Hours
+
+                                            Norm of      First-order 
+ Iteration  Func-count      Resnorm            step       optimality
+     0         37           2.95967                             21.4
+     1         74           2.80495      0.00300079               18      
+     2        111           2.72546      0.00216697             14.9      
+     3        148           2.67468      0.00166314             13.3      
+     4        185           2.63275      0.00147761             9.87      
+     5        222           2.60154      0.00130479             11.1      
+     6        259           2.56644      0.00141868             8.55      
+     7        296             2.541      0.00125601               11      
+     8        333           2.49934      0.00162381             10.9      
+     9        370           2.46516      0.00151094             7.48      
+    10        407           2.44234      0.00107704             8.54      
+    11        444           2.41647      0.00115832             10.6      
+    12        481           2.39096      0.00117573             7.98      
+    13        518           2.36706      0.00122071             8.94      
+    14        555           2.34115      0.00112572             8.67      
+    15        592           2.31629       0.0011839             9.01      
+    16        629           2.29294      0.00106881             9.99      
+    17        666           2.26801      0.00131392             8.02      
+    18        703           2.24671      0.00096709             8.49      
+    19        740            2.2219      0.00114593             9.73      
+    20        777            2.2002      0.00114209             7.18      
+    21        814           2.18285     0.000946773             10.5      
+    22        851           2.16161      0.00115046             5.75      
+    23        888            2.1478     0.000851076             8.12      
+    24        925           2.12758        0.001218             9.92      
+    25        962           2.10407      0.00106165             12.3      
+    26        999           2.08293      0.00133042             9.03      
+    27       1036            2.0681     0.000917059             5.94      
+    28       1073           2.05073      0.00103161              7.7      
+    29       1110           2.03391        0.001016             6.02      
+    30       1147           2.01762      0.00104035             8.42      
+    31       1184           2.00097      0.00108594             7.96      
+    32       1221           1.98578     0.000939901             7.09      
+    33       1258           1.96578     0.000964378             6.44      
+    34       1295           1.95274     0.000749981             10.6      
+    35       1332           1.93189      0.00116983             5.81      
+    36       1369           1.91876      0.00107844             5.76      
+    37       1406           1.90063     0.000894412             9.23      
+    38       1443           1.88415     0.000944115             8.15      
+    39       1480           1.87083     0.000944032              7.8      
+    40       1517           1.85062      0.00110005              6.7      
+    41       1554           1.83609       0.0007934             6.02      
+    42       1591            1.8238     0.000710686             6.95      
+    43       1628           1.80538      0.00132641             7.78      
+    44       1665           1.78847     0.000991617             6.16      
+    45       1702           1.77464     0.000938352             6.37      
+    46       1739           1.76319     0.000734359             7.34      
+    47       1776           1.74653     0.000880687             6.74      
+    48       1813           1.73689     0.000771413             8.87      
+    49       1850           1.72244     0.000928376             7.62      
+    50       1887           1.71488     0.000763856              8.6      
+    51       1924           1.69959      0.00087743             6.86      
+    52       1961           1.68651      0.00109351             8.74      
+    53       1998           1.66695      0.00110902             5.08      
+    54       2035           1.65525     0.000907632             8.14      
+
+<a href = "matlab: helpview('optim','solver_stopped_premature','CSHelpWindow');">Solver stopped prematurely</a>.
+
+lsqnonlin stopped because it exceeded the function evaluation limit,
+<a href = "matlab: helpview('optim','max_fun_evals','CSHelpWindow');">options.MaxFunctionEvaluations</a> = 2.000000e+03.
+
+Joint Model Personalization Runtime: 16.944397 Hours
+
+                                            Norm of      First-order 
+ Iteration  Func-count      Resnorm            step       optimality
+     0         77           5.12631                               31
+     1        154           4.46133      0.00906793             25.6      
+     2        231           3.96606      0.00726326             22.3      
+     3        308           3.58464      0.00673805             19.3      
+     4        385            3.3234      0.00679428             16.4      
+     5        462           3.10587      0.00557391             13.9      
+     6        539           2.93792      0.00807926             11.1      
+     7        616           2.81813      0.00755659             9.45      
+     8        693           2.72101      0.00765886             9.67      
+     9        770           2.63481      0.00729483             8.39      
+    10        847           2.56622       0.0040064             8.31      
+    11        924           2.51034      0.00296539             7.51      
+    12       1001           2.44456      0.00538639             8.77      
+    13       1078           2.39696      0.00441777                7      
+    14       1155           2.35828      0.00337829             6.49      
+    15       1232           2.32484      0.00405428             6.45      
+    16       1309           2.28731      0.00504054             6.36      
+    17       1386           2.25524      0.00332733             6.55      
+    18       1463           2.22578      0.00439252             5.59      
+    19       1540           2.19616      0.00393505             4.91      
+    20       1617           2.16875      0.00581573             4.61      
+    21       1694           2.14638      0.00374243             4.61      
+    22       1771           2.12157      0.00683288             4.42      
+    23       1848           2.10422      0.00287654             4.83      
+    24       1925           2.08664      0.00410122             4.51      
+    25       2002           2.06799       0.0050429             3.55      
+    26       2079            2.0478      0.00655176             4.25      
+    27       2156           2.03183      0.00317784             3.84      
+    28       2233           2.01546      0.00389056              4.2      
+    29       2310           2.00029       0.0065608             3.97      
+    30       2387           1.98641      0.00358534             3.97      
+    31       2464           1.97129      0.00474221             3.45      
+    32       2541           1.95604      0.00495425             2.98      
+
+<a href = "matlab: helpview('optim','solver_stopped_premature','CSHelpWindow');">Solver stopped prematurely</a>.
+
+lsqnonlin stopped because it exceeded the function evaluation limit,
+<a href = "matlab: helpview('optim','max_fun_evals','CSHelpWindow');">options.MaxFunctionEvaluations</a> = 2.500000e+03.
+
+Joint Model Personalization Runtime: 22.089291 Hours
+
+                                            Norm of      First-order 
+ Iteration  Func-count      Resnorm            step       optimality
+     0          9           2.13502                                0
+
+<a href = "matlab: helpview('optim','lsq_init_pt_min','CSHelpWindow');">Initial point is a local minimum</a>.
+
+Optimization completed because the <a href = "matlab: helpview('optim','lsq_grad_size','CSHelpWindow');">size of the gradient</a> at the initial point 
+is less than the value of the <a href = "matlab: helpview('optim','optimality_tolerance_lsq','CSHelpWindow');">optimality tolerance</a>.
+
+<<a href = "matlab: createExitMsg({'optimlib:snls:Exit100basic'},{'optimlib:snls:Exit100detailed','0.000000e+00','1.000000e-03'},true,true);;">stopping criteria details</a>>
+Joint Model Personalization Runtime: 0.021133 Hours
+
+                                            Norm of      First-order 
+ Iteration  Func-count      Resnorm            step       optimality
+     0         45           32.7794                              153
+     1         90           5.36805       0.0953998             73.3      
+     2        135          0.989191       0.0470139             17.7      
+     3        180          0.689902       0.0341124             7.57      
+     4        225          0.670266       0.0174565             5.41      
+     5        270          0.615791      0.00436414             2.15      
+     6        315          0.606057      0.00436414             2.03      
+     7        360           0.60598      0.00708712             4.18      
+     8        405          0.591926      0.00177178             1.24      
+     9        450          0.586818       0.0027675              1.6      
+    10        495          0.580495      0.00354356             1.54      
+    11        540          0.580495      0.00403684             1.54      
+    12        585          0.576996      0.00100921             1.06      
+    13        630          0.574151      0.00100921            0.987      
+    14        675          0.569766      0.00201842            0.997      
+    15        720          0.565204      0.00403684             2.32      
+    16        765          0.565204      0.00336878             2.32      
+    17        810          0.561757     0.000842196            0.995      
+    18        855          0.557853      0.00168439            0.734      
+    19        900          0.552801      0.00336878             1.12      
+    20        945          0.549788      0.00424433             1.85      
+    21        990          0.549788      0.00520942             1.85      
+    22       1035          0.544986      0.00130236            0.958      
+    23       1080          0.542845      0.00130236            0.693      
+    24       1125          0.539924      0.00260471             1.39      
+    25       1170          0.539924      0.00520942             1.39      
+    26       1215          0.537391      0.00130236          6.1e+04      
+    27       1260          0.536128      0.00130236            0.701      
+    28       1305          0.535208     0.000325589            0.742      
+    29       1350          0.533638     0.000651178            0.814      
+    30       1395          0.531039      0.00130236            0.707      
+    31       1440            0.5282      0.00260471             1.07      
+    32       1485          0.527417      0.00545141             2.05      
+    33       1530          0.522608      0.00130236             0.73      
+
+<a href = "matlab: helpview('optim','solver_stopped_premature','CSHelpWindow');">Solver stopped prematurely</a>.
+
+lsqnonlin stopped because it exceeded the function evaluation limit,
+<a href = "matlab: helpview('optim','max_fun_evals','CSHelpWindow');">options.MaxFunctionEvaluations</a> = 1.500000e+03.
+
+Joint Model Personalization Runtime: 2.389015 Hours
+
+                                            Norm of      First-order 
+ Iteration  Func-count      Resnorm            step       optimality
+     0         33          0.188385                            0.302
+     1         66          0.188373     0.000229914            0.202      
+     2         99          0.188373     0.000301576            0.202      
+     3        132          0.188336      7.5394e-05           0.0803      
+     4        165          0.188336     0.000150788           0.0803      
+     5        198          0.188336      3.7697e-05           0.0803      
+     6        231          0.188336     9.42425e-06           0.0803      
+     7        264          0.188336     2.35606e-06           0.0803      
+     8        297          0.188336     5.89016e-07           0.0803      
+
+<a href = "matlab: helpview('optim','local_min_possible_lsq','CSHelpWindow');">Local minimum possible</a>.
+lsqnonlin stopped because the <a href = "matlab: helpview('optim','norm_current_step','CSHelpWindow');">size of the current step</a> is less than
+the value of the <a href = "matlab: helpview('optim','step_size_tol','CSHelpWindow');">step size tolerance</a>.
+
+<<a href = "matlab: createExitMsg({'optimlib:snls:Exit2basic','lsqnonlin'},{'optimlib:snls:Exit2detailed','5.890158e-07','1.000000e-06'},true,true);;">stopping criteria details</a>>
+Joint Model Personalization Runtime: 0.440765 Hours
+
+                                            Norm of      First-order 
+ Iteration  Func-count      Resnorm            step       optimality
+     0         73          0.767465                             4.64
+     1        146          0.756679       0.0026395             4.89      
+     2        219          0.747067      0.00262327             3.95      
+     3        292          0.741601     0.000792955             4.23      
+     4        365          0.734083     0.000993484             2.82      
+     5        438          0.726967      0.00234636             3.67      
+     6        511          0.721248      0.00109692             3.61      
+     7        584          0.713216       0.0018418             2.29      
+     8        657            0.7083     0.000895358             2.24      
+     9        730          0.703167      0.00197797             3.01      
+    10        803          0.697234     0.000911856             2.38      
+    11        876          0.692731      0.00152722             2.61      
+    12        949          0.688541     0.000802094              2.5      
+    13       1022          0.684098      0.00109305             1.97      
+    14       1095          0.681254      0.00172352             2.67      
+    15       1168          0.679161     0.000619426              1.8      
+    16       1241           0.67585      0.00115581             2.13      
+    17       1314          0.672366      0.00100163             1.69      
+    18       1387           0.66947      0.00160559             2.24      
+    19       1460           0.66619      0.00115096             2.41      
+    20       1533          0.661889      0.00172594              2.1      
+
+<a href = "matlab: helpview('optim','solver_stopped_premature','CSHelpWindow');">Solver stopped prematurely</a>.
+
+lsqnonlin stopped because it exceeded the function evaluation limit,
+<a href = "matlab: helpview('optim','max_fun_evals','CSHelpWindow');">options.MaxFunctionEvaluations</a> = 1.500000e+03.
+
+Joint Model Personalization Runtime: 3.106464 Hours
+
+                                            Norm of      First-order 
+ Iteration  Func-count      Resnorm            step       optimality
+     0         25         0.0090484                            0.756
+     1         50         0.0090484     9.83963e-05            0.756      
+     2         75        0.00901252     2.45991e-05            0.913      
+     3        100        0.00875084     2.45991e-05            0.759      
+     4        125        0.00875084     4.91982e-05            0.759      
+     5        150        0.00875084     1.22995e-05            0.759      
+     6        175        0.00875084     3.07488e-06            0.759      
+     7        200        0.00875084     7.68721e-07            0.759      
+
+<a href = "matlab: helpview('optim','local_min_possible_lsq','CSHelpWindow');">Local minimum possible</a>.
+lsqnonlin stopped because the <a href = "matlab: helpview('optim','norm_current_step','CSHelpWindow');">size of the current step</a> is less than
+the value of the <a href = "matlab: helpview('optim','step_size_tol','CSHelpWindow');">step size tolerance</a>.
+
+<<a href = "matlab: createExitMsg({'optimlib:snls:Exit2basic','lsqnonlin'},{'optimlib:snls:Exit2detailed','7.687212e-07','1.000000e-06'},true,true);;">stopping criteria details</a>>
+Joint Model Personalization Runtime: 0.386307 Hours

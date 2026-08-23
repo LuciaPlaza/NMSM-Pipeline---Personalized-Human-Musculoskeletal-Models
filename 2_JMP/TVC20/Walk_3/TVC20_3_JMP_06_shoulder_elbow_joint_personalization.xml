@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<NMSMPipelineDocument Version="1.5.2">
+	<JointModelPersonalizationTool name="default">
+		<input_directory>.</input_directory>
+		<input_model_file>TVC20_3_JMP_results\TVC20_3_NMSM_JMP_05_torso.osim</input_model_file>
+		<output_model_file>TVC20_3_JMP_results\TVC20_3_NMSM_JMP_06_shoulder_elbow.osim</output_model_file>
+		<results_directory>TVC20_3_JMP_results</results_directory>
+		<allowable_error>0.005</allowable_error>
+		<JMPTaskList>
+			<JMPTask name="06_shoulder_axes_and_humerus">
+				<is_enabled>true</is_enabled>
+				<index>1</index>
+				<marker_file_name>TVC_20_BWA6_walk_RCNL2025.trc</marker_file_name>
+				<time_range>0.30 1.50</time_range>
+				<JMPJointSet>
+					<!--
+					  acromial_r/l (shoulder): orientation on BOTH parent
+					  (torso_offset) and child (humerus_offset) frames, 0.30 rad
+					  bounds. This exactly mirrors knee_r/l in Step 2.
+
+					  ELBOW IS DELIBERATELY EXCLUDED from this step, mirroring
+					  the lesson learned with ankle in the leg: when ankle
+					  orientation was bundled with knee in an early version, it
+					  competed with the larger knee/shank errors and the
+					  optimizer sacrificed ankle accuracy to reduce the bigger
+					  cost (L_Ankle_Lateral worsened +85% when bundled).
+					  Elbow gets its own dedicated final step (Step 8), run
+					  after all body scaling is complete, with no competing
+					  large-error parameters.
+					-->
+					<JMPJoint name="acromial_r">
+						<parent_frame_transformation>
+							<translation>false false false</translation>
+							<orientation>true true false</orientation>
+							<translation_bounds>0.0</translation_bounds>
+							<orientation_bounds>0.30</orientation_bounds>
+						</parent_frame_transformation>
+						<child_frame_transformation>
+							<translation>false false false</translation>
+							<orientation>true true false</orientation>
+							<translation_bounds>0.0</translation_bounds>
+							<orientation_bounds>0.30</orientation_bounds>
+						</child_frame_transformation>
+					</JMPJoint>
+					<JMPJoint name="acromial_l">
+						<parent_frame_transformation>
+							<translation>false false false</translation>
+							<orientation>true true false</orientation>
+							<translation_bounds>0.0</translation_bounds>
+							<orientation_bounds>0.30</orientation_bounds>
+						</parent_frame_transformation>
+						<child_frame_transformation>
+							<translation>false false false</translation>
+							<orientation>true true false</orientation>
+							<translation_bounds>0.0</translation_bounds>
+							<orientation_bounds>0.30</orientation_bounds>
+						</child_frame_transformation>
+					</JMPJoint>
+				</JMPJointSet>
+				<JMPBodySet>
+					<!--
+					  humerus: scale_body=true, move_markers XYZ (mirrors femur
+					  in Step 1). R_Elbow/L_Elbow sit at the distal end of the
+					  humerus (Y ~ -0.27 to -0.28 m, same relative position as
+					  R_Knee_Lateral on femur at Y=-0.333), so Y freedom along
+					  the segment axis is expected to matter here just as it
+					  did for the knee marker. Including humerus here (paired
+					  with the shoulder joint) also provides the non-zero
+					  gradient the joint-orientation parameters need — a
+					  joint-axis-only step with no paired body produced zero
+					  gradient when first tried on the knee.
+					-->
+					<JMPBody name="humerus_r">
+						<scale_body>true</scale_body>
+						<move_markers>true true true</move_markers>
+					</JMPBody>
+					<JMPBody name="humerus_l">
+						<scale_body>true</scale_body>
+						<move_markers>true true true</move_markers>
+					</JMPBody>
+				</JMPBodySet>
+			</JMPTask>
+		</JMPTaskList>
+		<accuracy>1e-5</accuracy>
+		<diff_min_change>1e-4</diff_min_change>
+		<optimality_tolerance>1e-3</optimality_tolerance>
+		<function_tolerance>1e-6</function_tolerance>
+		<step_tolerance>1e-6</step_tolerance>
+		<max_function_evaluations>1000</max_function_evaluations>
+	</JointModelPersonalizationTool>
+</NMSMPipelineDocument>

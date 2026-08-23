@@ -1,0 +1,268 @@
+
+                                            Norm of      First-order 
+ Iteration  Func-count      Resnorm            step       optimality
+     0         89           5.55971                             33.5
+     1        178           4.96822       0.0199955             29.2      
+     2        267           4.50472       0.0155146             26.3      
+     3        356           4.19917       0.0119653         6.86e+04      
+     4        445           3.95868       0.0118123             22.5      
+     5        534           3.73817       0.0132975             20.6      
+     6        623           3.56832       0.0092417             18.3      
+     7        712           3.40992       0.0090638             15.5      
+     8        801           3.27855      0.00759544             16.2      
+     9        890           3.17046       0.0064223             15.5      
+    10        979           3.08362       0.0062373             13.1      
+    11       1068           3.00873       0.0066299               12      
+    12       1157           2.93788      0.00416967             11.8      
+    13       1246           2.88014      0.00353925             10.1      
+    14       1335           2.81863      0.00461707             10.2      
+    15       1424           2.77927      0.00355282             9.31      
+    16       1513           2.74714      0.00238361             7.09      
+    17       1602           2.71228      0.00287189             8.02      
+    18       1691           2.68073      0.00301306             8.73      
+    19       1780            2.6465      0.00321166             7.94      
+    20       1869           2.61889      0.00250102              7.1      
+    21       1958           2.59513      0.00165327             6.71      
+    22       2047           2.57033      0.00349829             6.07      
+    23       2136           2.54158      0.00260089             4.74      
+    24       2225            2.5204      0.00239137             5.92      
+    25       2314           2.50214      0.00345158          5.8e+04      
+    26       2403           2.48564      0.00243151             6.02      
+    27       2492           2.47431     0.000607878             5.46      
+    28       2581           2.45946      0.00121576              5.6      
+    29       2670           2.44628      0.00269261             5.05      
+    30       2759           2.43095      0.00257754             4.59      
+    31       2848           2.41854      0.00264514             5.27      
+    32       2937           2.40256      0.00338311             6.55      
+    33       3026           2.38725      0.00205764             4.12      
+    34       3115           2.37241      0.00264298             5.84      
+    35       3204           2.36092      0.00302042             6.08      
+    36       3293           2.34925      0.00216674             6.66      
+    37       3382           2.33642      0.00180672             5.19      
+    38       3471           2.32254      0.00342023             5.71      
+    39       3560           2.31088      0.00173134             6.52      
+    40       3649           2.30028      0.00244429              6.8      
+    41       3738           2.28795      0.00273281              4.6      
+    42       3827           2.27933      0.00209898             5.77      
+    43       3916           2.26901      0.00175168             6.81      
+    44       4005           2.25796      0.00236255             6.14      
+    45       4094           2.24739      0.00191684             5.67      
+    46       4183           2.23847      0.00186526             4.32      
+    47       4272            2.2283      0.00170951              4.1      
+    48       4361           2.22019      0.00131625             4.78      
+    49       4450           2.21176      0.00156536             6.28      
+    50       4539           2.20155      0.00254496         1.48e+04      
+    51       4628           2.19251      0.00184323             5.36      
+    52       4717           2.18811     0.000460809             4.69      
+    53       4806            2.1817     0.000921617             5.07      
+    54       4895           2.17332      0.00184323             4.25      
+    55       4984           2.16526      0.00249134                5      
+    56       5073           2.15718      0.00145359             5.15      
+    57       5162            2.1491      0.00207802             4.86      
+    58       5251           2.13959      0.00203828             5.36      
+    59       5340           2.13157      0.00183289             5.15      
+    60       5429           2.12531      0.00204824             5.19      
+    61       5518           2.11791      0.00162036             5.18      
+    62       5607           2.10891      0.00292753             4.96      
+    63       5696           2.10065      0.00194723             4.71      
+    64       5785            2.0946       0.0015391             3.75      
+    65       5874           2.08904      0.00152096              4.4      
+    66       5963           2.08351      0.00151731             4.09      
+    67       6052           2.07905      0.00129124             5.95      
+
+<a href = "matlab: helpview('optim','solver_stopped_premature','CSHelpWindow');">Solver stopped prematurely</a>.
+
+lsqnonlin stopped because it exceeded the function evaluation limit,
+<a href = "matlab: helpview('optim','max_fun_evals','CSHelpWindow');">options.MaxFunctionEvaluations</a> = 6.000000e+03.
+
+Joint Model Personalization Runtime: 4.688682 Hours
+
+                                            Norm of      First-order 
+ Iteration  Func-count      Resnorm            step       optimality
+     0         37           1.15103                             4.58
+     1         74           1.14866     0.000358548             8.32      
+     2        111           1.14434     0.000456448             5.81      
+     3        148           1.14014     0.000429928             7.68      
+     4        185           1.13831      0.00037594             4.87      
+     5        222           1.13584     0.000395034             8.71      
+     6        259           1.13104     0.000537108             5.76      
+     7        296           1.12799     0.000343819             7.31      
+     8        333           1.12799     0.000355355             7.31      
+     9        370           1.12799     8.88386e-05             7.31      
+    10        407           1.12799     2.22097e-05             7.31      
+    11        444           1.12799     5.55241e-06             7.31      
+    12        481           1.12799      1.3881e-06             7.31      
+    13        518           1.12799     3.47026e-07             7.31      
+
+<a href = "matlab: helpview('optim','local_min_possible_lsq','CSHelpWindow');">Local minimum possible</a>.
+lsqnonlin stopped because the <a href = "matlab: helpview('optim','norm_current_step','CSHelpWindow');">size of the current step</a> is less than
+the value of the <a href = "matlab: helpview('optim','step_size_tol','CSHelpWindow');">step size tolerance</a>.
+
+<<a href = "matlab: createExitMsg({'optimlib:snls:Exit2basic','lsqnonlin'},{'optimlib:snls:Exit2detailed','3.470259e-07','1.000000e-06'},true,true);;">stopping criteria details</a>>
+Joint Model Personalization Runtime: 0.307511 Hours
+
+                                            Norm of      First-order 
+ Iteration  Func-count      Resnorm            step       optimality
+     0         77           1.74469                             12.2
+     1        154           1.68206      0.00455654             10.2      
+     2        231            1.6157      0.00704775             8.57      
+     3        308           1.56953      0.00427962             6.71      
+     4        385           1.52412      0.00596446             6.11      
+     5        462           1.49208      0.00717253             5.11      
+     6        539           1.45709      0.00719461             4.97      
+     7        616           1.42941      0.00582071             4.29      
+     8        693           1.40542      0.00642844             3.66      
+     9        770           1.37564      0.00815348             3.82      
+    10        847           1.35112       0.0066548             3.81      
+    11        924           1.32734      0.00741805             3.42      
+    12       1001           1.30187      0.00723172             3.58      
+    13       1078           1.27649      0.00946578             3.81      
+    14       1155           1.25532      0.00675443             3.12      
+    15       1232           1.23859      0.00562272             3.62      
+    16       1309           1.22239      0.00549548             3.49      
+    17       1386           1.20633      0.00491324             3.91      
+    18       1463           1.18961      0.00718182             3.51      
+    19       1540           1.17265      0.00698919             3.72      
+    20       1617           1.15393      0.00833419             3.87      
+    21       1694           1.13601      0.00803972             3.58      
+    22       1771           1.11961      0.00457117             2.98      
+    23       1848           1.10273      0.00535404             3.64      
+    24       1925           1.08396      0.00943879              3.3      
+    25       2002           1.06621      0.00667427             3.99      
+    26       2079           1.05242      0.00528032             3.54      
+    27       2156           1.03849      0.00628815             3.44      
+    28       2233           1.02543        0.005164             3.01      
+    29       2310           1.01486      0.00545783             3.93      
+    30       2387           1.00264       0.0063125             3.04      
+    31       2464          0.991071      0.00676057             3.19      
+    32       2541          0.979491      0.00631083              2.4      
+
+<a href = "matlab: helpview('optim','solver_stopped_premature','CSHelpWindow');">Solver stopped prematurely</a>.
+
+lsqnonlin stopped because it exceeded the function evaluation limit,
+<a href = "matlab: helpview('optim','max_fun_evals','CSHelpWindow');">options.MaxFunctionEvaluations</a> = 2.500000e+03.
+
+Joint Model Personalization Runtime: 1.352746 Hours
+
+                                            Norm of      First-order 
+ Iteration  Func-count      Resnorm            step       optimality
+     0          9         0.0587279                                0
+
+<a href = "matlab: helpview('optim','lsq_init_pt_min','CSHelpWindow');">Initial point is a local minimum</a>.
+
+Optimization completed because the <a href = "matlab: helpview('optim','lsq_grad_size','CSHelpWindow');">size of the gradient</a> at the initial point 
+is less than the value of the <a href = "matlab: helpview('optim','optimality_tolerance_lsq','CSHelpWindow');">optimality tolerance</a>.
+
+<<a href = "matlab: createExitMsg({'optimlib:snls:Exit100basic'},{'optimlib:snls:Exit100detailed','0.000000e+00','1.000000e-03'},true,true);;">stopping criteria details</a>>
+Joint Model Personalization Runtime: 0.004829 Hours
+
+                                            Norm of      First-order 
+ Iteration  Func-count      Resnorm            step       optimality
+     0         45           2.19736                               47
+     1         90          0.717385       0.0418433             14.1      
+     2        135          0.482157       0.0240226              8.8      
+     3        180          0.449509        0.016253             7.62      
+     4        225          0.430351       0.0205511             6.16      
+     5        270          0.394719      0.00513777              2.1      
+     6        315          0.394719      0.00513777              2.1      
+     7        360          0.388241      0.00128444            0.806      
+     8        405          0.385763      0.00128444            0.767      
+     9        450          0.382693      0.00256889             1.06      
+    10        495          0.380301      0.00513777             2.13      
+    11        540          0.380301      0.00513777             2.13      
+    12        585          0.374618      0.00128444            0.501      
+    13        630          0.372502      0.00128444            0.696      
+    14        675          0.369405      0.00256889            0.718      
+    15        720          0.367961      0.00513777             1.98      
+    16        765          0.367961      0.00513777             1.98      
+    17        810          0.363784      0.00128444            0.559      
+    18        855          0.362334      0.00128444            0.829      
+    19        900          0.361711      0.00256889             1.76      
+    20        945          0.359056     0.000642222            0.649      
+    21        990          0.357771      0.00128444              0.7      
+    22       1035          0.357323      0.00128444             1.28      
+    23       1080          0.356257     0.000321111            0.716      
+    24       1125          0.355325     0.000642222            0.439      
+    25       1170          0.353999      0.00128444            0.575      
+    26       1215          0.352576      0.00234412             1.55      
+    27       1260          0.352576      0.00256889             1.55      
+    28       1305          0.350595     0.000642222            0.451      
+    29       1350          0.349935     0.000642222            0.587      
+    30       1395          0.349199     0.000642222            0.438      
+    31       1440          0.347741      0.00128444            0.474      
+    32       1485          0.345904      0.00256889            0.748      
+    33       1530          0.345904      0.00256889            0.748      
+
+<a href = "matlab: helpview('optim','solver_stopped_premature','CSHelpWindow');">Solver stopped prematurely</a>.
+
+lsqnonlin stopped because it exceeded the function evaluation limit,
+<a href = "matlab: helpview('optim','max_fun_evals','CSHelpWindow');">options.MaxFunctionEvaluations</a> = 1.500000e+03.
+
+Joint Model Personalization Runtime: 0.432275 Hours
+
+                                            Norm of      First-order 
+ Iteration  Func-count      Resnorm            step       optimality
+     0         33          0.142569                             0.34
+     1         66          0.142522     0.000334859           0.0743      
+     2         99          0.142507     0.000256426            0.019      
+     3        132          0.142507     0.000346843            0.019      
+     4        165          0.142507     8.67108e-05            0.019      
+     5        198          0.142507     2.16777e-05            0.019      
+     6        231          0.142507     5.41943e-06            0.019      
+     7        264          0.142507     1.35486e-06            0.019      
+     8        297          0.142503     3.38714e-07           0.0629      
+
+<a href = "matlab: helpview('optim','local_min_possible_lsq','CSHelpWindow');">Local minimum possible</a>.
+lsqnonlin stopped because the <a href = "matlab: helpview('optim','norm_current_step','CSHelpWindow');">size of the current step</a> is less than
+the value of the <a href = "matlab: helpview('optim','step_size_tol','CSHelpWindow');">step size tolerance</a>.
+
+<<a href = "matlab: createExitMsg({'optimlib:snls:Exit2basic','lsqnonlin'},{'optimlib:snls:Exit2detailed','3.387142e-07','1.000000e-06'},true,true);;">stopping criteria details</a>>
+Joint Model Personalization Runtime: 0.093732 Hours
+
+                                            Norm of      First-order 
+ Iteration  Func-count      Resnorm            step       optimality
+     0         73          0.375554                             2.51
+     1        146          0.368795       0.0031196             3.22      
+     2        219          0.361731      0.00164177             2.38      
+     3        292          0.356831      0.00181646              3.1      
+     4        365          0.351319      0.00135195             1.79      
+     5        438          0.347724      0.00169386             3.16      
+     6        511          0.344503      0.00187098             1.48      
+     7        584          0.342374      0.00161815             2.48      
+     8        657          0.341129     0.000688189             1.53      
+     9        730          0.339578      0.00149798             1.19      
+    10        803          0.338696     0.000676057             1.17      
+    11        876          0.338178     0.000580039             1.63      
+    12        949          0.337206     0.000856491             1.97      
+    13       1022          0.336553      0.00083629              1.7      
+    14       1095          0.335553      0.00100894              1.3      
+    15       1168          0.334592     0.000562235             2.04      
+    16       1241          0.334338       0.0014415             1.54      
+    17       1314          0.333909     0.000360375             1.56      
+    18       1387          0.333781     0.000360375             1.12      
+    19       1460          0.333781     9.00938e-05             1.12      
+    20       1533          0.333781     2.25235e-05             1.12      
+
+<a href = "matlab: helpview('optim','solver_stopped_premature','CSHelpWindow');">Solver stopped prematurely</a>.
+
+lsqnonlin stopped because it exceeded the function evaluation limit,
+<a href = "matlab: helpview('optim','max_fun_evals','CSHelpWindow');">options.MaxFunctionEvaluations</a> = 1.500000e+03.
+
+Joint Model Personalization Runtime: 0.439294 Hours
+
+                                            Norm of      First-order 
+ Iteration  Func-count      Resnorm            step       optimality
+     0         25         0.0113718                             2.44
+     1         50        0.00977252     0.000342964             1.53      
+     2         75        0.00952167     0.000230432              2.1      
+     3        100        0.00952167      5.7608e-05              2.1      
+     4        125        0.00952167      1.4402e-05              2.1      
+     5        150        0.00952167      3.6005e-06              2.1      
+     6        175        0.00952167     9.00125e-07              2.1      
+
+<a href = "matlab: helpview('optim','local_min_possible_lsq','CSHelpWindow');">Local minimum possible</a>.
+lsqnonlin stopped because the <a href = "matlab: helpview('optim','norm_current_step','CSHelpWindow');">size of the current step</a> is less than
+the value of the <a href = "matlab: helpview('optim','step_size_tol','CSHelpWindow');">step size tolerance</a>.
+
+<<a href = "matlab: createExitMsg({'optimlib:snls:Exit2basic','lsqnonlin'},{'optimlib:snls:Exit2detailed','9.001249e-07','1.000000e-06'},true,true);;">stopping criteria details</a>>
+Joint Model Personalization Runtime: 0.061515 Hours
