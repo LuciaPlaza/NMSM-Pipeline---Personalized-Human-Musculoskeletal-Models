@@ -1,23 +1,24 @@
 function generarIKSetup(plantillaXML, sujetoID, trialLabel, trcFile, modelFile, carpetaSalida, trimTable)
-% GENERARIKSETUP  Genera y ejecuta un IK para un sujeto/trial concreto,
-%   usando el modelo YA ESCALADO del sujeto y (opcionalmente) recortando
-%   el trial a la ventana de marcha en estado estacionario definida por
-%   los eventos de contacto (primer heel-strike -> ultimo heel-strike).
+% GENERARIKSETUP  Generates and runs IK for a specific subject/trial,
+%   using the subject's ALREADY SCALED model and, optionally, trimming
+%   the trial to the steady-state gait window defined by contact events
+%   (first heel-strike -> last heel-strike).
 %
-%   Los campos time_range, marker_file y output_motion_file se editan
-%   como TEXTO sobre la plantilla XML; el IKTaskSet se mantiene intacto.
+%   The time_range, marker_file, and output_motion_file fields are edited
+%   as TEXT in the XML template; the IKTaskSet remains unchanged.
 %
-% Argumentos:
-%   plantillaXML  - ruta al XML de IK que sirve de plantilla (aporta el IKTaskSet)
-%   sujetoID      - p.ej. 'SUBJ11'
-%   trialLabel    - p.ej. 'Walk_2' (para nombrar los ficheros de salida)
-%   trcFile       - ruta COMPLETA al .trc de ese trial
-%   modelFile     - ruta COMPLETA al .osim escalado de ESE sujeto
-%   carpetaSalida - carpeta donde escribir el .mot y el .xml resultantes
-%   trimTable     - (opcional) tabla leida de gait_trim_windows.csv con
-%                   columnas trc_file, tStart_TRC, tEnd_TRC. Si se pasa y
-%                   contiene el .trc actual, se recorta a esa ventana.
-%                   Si se omite o no hay match, se usa el trial completo.
+% Arguments:
+%   plantillaXML  - path to the IK XML file used as a template (provides the IKTaskSet)
+%   sujetoID      - e.g. 'SUBJ11'
+%   trialLabel    - e.g. 'Walk_2' (used to name the output files)
+%   trcFile       - FULL path to the .trc file for that trial
+%   modelFile     - FULL path to the scaled .osim model for THAT subject
+%   carpetaSalida - folder where the resulting .mot and .xml files are written
+%   trimTable     - (optional) table read from gait_trim_windows.csv with
+%                   columns trc_file, tStart_TRC, tEnd_TRC. If provided and
+%                   it contains the current .trc file, the trial is trimmed
+%                   to that window. If omitted or no match is found, the
+%                   complete trial is used.
 
     import org.opensim.modeling.*
 
@@ -42,36 +43,36 @@ function generarIKSetup(plantillaXML, sujetoID, trialLabel, trcFile, modelFile, 
     outMotFile = fullfile(carpetaSalida, [nombreBase '_IK.mot']);
     setupOut   = fullfile(carpetaSalida, [nombreBase '_IK_setup.xml']);
 
-    % --- Rango temporal: por defecto, todo el TRC ---
+    % --- Time range: by default, the complete TRC ---
     trcData = TimeSeriesTableVec3(trcFile);
-    % double(...) fuerza conversion a tipo nativo de MATLAB: el valor que
-    % devuelve la API de OpenSim funciona con sprintf pero no es compatible
-    % con max()/min(), que es mas estricto con los tipos.
+    % double(...) forces conversion to a native MATLAB type: the value
+    % returned by the OpenSim API works with sprintf but is not compatible
+    % with max()/min(), which is stricter about data types.
     t0 = double(trcData.getIndependentColumn().get(0));
     tf = double(trcData.getIndependentColumn().get(trcData.getNumRows() - 1));
     fuenteTiempo = 'trial completo';
 
-    % --- Si hay tabla de recorte, buscar la ventana de este .trc ---
+    % --- If a trimming table is available, find the window for this .trc file ---
     if nargin >= 7 && ~isempty(trimTable)
         [~, trcName, trcExt] = fileparts(trcFile);
         trcBaseName = [trcName trcExt];
 
-        % Conversion defensiva: readtable puede importar texto como cell,
-        % string o categorical segun la version de MATLAB. cellstr(string(...))
-        % normaliza cualquiera de esos tipos a cell array de char, evitando
-        % el error "Second input array is an invalid data type" en strcmp.
+        % Defensive conversion: readtable may import text as cell, string,
+        % or categorical depending on the MATLAB version. cellstr(string(...))
+        % normalizes any of these types to a cell array of char, preventing
+        % the "Second input array is an invalid data type" error in strcmp.
         trcFileColumn = cellstr(string(trimTable.trc_file));
 
         idx = find(strcmp(trcFileColumn, trcBaseName), 1);
         if ~isempty(idx)
-            % Conversion defensiva: si readtable importo estas columnas
-            % como texto (p.ej. por formato regional/decimal al abrir el
-            % CSV en Excel), str2double(string(...)) las fuerza a double.
-            % Si ya eran double, esto no cambia su valor.
+            % Defensive conversion: if readtable imported these columns
+            % as text (e.g. because of regional/decimal formatting when the
+            % CSV was opened in Excel), str2double(string(...)) forces them
+            % to double. If they are already double, their values are unchanged.
             tStart = str2double(string(trimTable.tStart_TRC(idx)));
             tEnd   = str2double(string(trimTable.tEnd_TRC(idx)));
             if ~isnan(tStart) && ~isnan(tEnd) && tEnd > tStart
-                % Asegurar que la ventana cae dentro del TRC real
+                % Ensure that the trimming window falls within the actual TRC range
                 t0 = max(tStart, t0);
                 tf = min(tEnd, tf);
                 fuenteTiempo = 'recorte por eventos (HS->HS)';
@@ -83,7 +84,7 @@ function generarIKSetup(plantillaXML, sujetoID, trialLabel, trcFile, modelFile, 
         end
     end
 
-    % --- Editar la plantilla como texto ---
+    % --- Edit the template as text ---
     txt = fileread(plantillaXML);
     trcFileFwd    = strrep(trcFile, '\', '/');
     outMotFileFwd = strrep(outMotFile, '\', '/');
@@ -102,7 +103,7 @@ function generarIKSetup(plantillaXML, sujetoID, trialLabel, trcFile, modelFile, 
     fwrite(fid, txt);
     fclose(fid);
 
-    % --- Ejecutar el IK ---
+    % --- Run IK ---
     ikTool = InverseKinematicsTool(setupOut);
     ikTool.setModel(Model(modelFile));
     ikTool.run();
